@@ -1,0 +1,97 @@
+*{
+    /* border :1px solid red;  */
+   margin:0 ;
+   padding:0 ;
+}
+body{
+    background-image:linear-gradient(to left bottom , rgba(130, 127, 131, 0.863) , rgba(187, 137, 130, 0.877)),url("../img/coffee3.jpg") ;
+    height:100vh ;
+    background-size: cover;
+    background-position: top;
+}
+.rbox{
+    border : 1px solid black;
+    width:28%;
+    position : absolute;
+    top:50% ;
+    left:50%;
+    transform:translate(-50% , -50%);
+    background-color:rgba(235, 224, 224, 0.7);
+    border-radius: 4px;
+    animation-name:fromTheLeft;
+    animation-duration:4s;
+    animation-delay: .1s ;
+    
+   
+}
+.heading{
+    text-align:center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 700 ;
+    text-transform: uppercase ;
+    background-image:linear-gradient(to left , rgba(135, 175, 228, 0.959),rgba(3, 117, 3, 0.575)) ;
+    color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    letter-spacing: 3px;
+}
+table{
+    width:100%;
+}
+input{
+    width:90%;
+    height:30px;
+    margin:0 5% 0 0;
+    outline:none;
+    border:none;
+}
+table{
+    margin:8px ;
+}
+.btn{
+    width:96%;
+    height:40px;
+    border-radius: 3px;
+    background-color: lightblue;
+    
+    
+}
+.input{
+     border: 1px solid #e7e7e7;
+    background-color: #fff; 
+    color: inherit; 
+    font-family: inherit;
+    font-size: 14px;
+    padding: 0 10px 0 10px;
+    border-radius: 5px;
+    transition: border 1s;
+}
+.input:focus{
+    outline:none;
+    border:1px solid rgb(44, 60, 75);
+}
+
+
+
+.field {
+    position:relative;
+       
+}
+   
+.pswdMatch {
+    position:absolute;
+    bottom:3px;
+    right:29px;
+    width:24px;
+    height:24px;
+}
+@keyframes fromTheLeft{
+    0%{
+        opacity:0 ;
+        
+    }
+  
+    100%{
+        opacity:1;
+        
+    }
